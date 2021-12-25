@@ -1,11 +1,63 @@
-Install Terraform:
-
-https://www.terraform.io/downloads.html
-
 Install Visual Studio Code Editor:
 
 https://code.visualstudio.com/download
 
-Attached the ppt for reading:
 
-Hashicorp Terraform Deep Dive
+Install Hashicorp Plugin in Visual Studio Code
+
+--------------------------------------------------------------------------------------------------------------------
+
+Install Terraform:
+
+https://www.terraform.io/downloads.html
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+Mac Installation Steps: 
+
+Pre-Requisites:
+
+------
+
+Install brew
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+brew --version Homebrew 3.3.7 Homebrew/homebrew-core (git revision b26d2b7fcd6; last commit 2021-12-09)
+
+------
+
+Install Python3
+
+brew install python3
+
+------
+
+Install AWS CLI:
+
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" unzip awscli-bundle.zip sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+
+
+If Error throws:
+
+Point to Python3
+
+$ python --version Python 2.7.16 
+$ alias python="python3" 
+$ python --version Python 3.9.9
+
+Install aws --version
+
+$ sudo /usr/local/bin/python3.9 awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+
+$ aws --version aws-cli/1.22.23 Python/3.9.9 Darwin/19.6.0 botocore/1.23.23
+
+$ aws configure 
+AWS Access Key ID [None]: <access-key>
+AWS Secret Access Key [None]: <secret-key>
+Default region name [None]: <region-name>
+Default output format [None]: <json/table>
+
+--------------------------------------------------------------------------------------------------------------------
+
